@@ -1,0 +1,273 @@
+// Table colors
+$table-bg:#fdfafa;
+$plan-header-bg:#e67e22; //change
+$plan-header-bg-2:#3498db; //change
+$plan-header-bg-3:#2ecc71; //change
+$plan-header-bg-4:#9b59b6; //change
+
+$single-table-bg:#fff;
+$table-header:#fff;
+$table-border-color:lighten($plan-header-bg, 60%);
+$plan-price-color: #fff;
+$plan-price-month-color: #8394AE;
+$plan-price-border: lighten($plan-header-bg, 20%);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    padding-top: 70px;
+}
+
+#pricing-tables {
+    background-color: $table-bg;
+    padding: 30px 0;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    & .col-md-3,.col-sm-6,.col-xs-12 {
+        padding-right: 0;
+        padding-left: 0;
+        &:hover {
+            box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.75);
+            z-index: 2;
+            -webkit-transform: scale(1.06);
+            -ms-transform: scale(1.06);
+            -moz-transform: scale(1.06);
+            transform: scale(1.06);
+            border: 0;
+            -webkit-transition: 0.5s all;
+            transition: 0.5s all;
+            border: none;
+        }
+    }
+}
+
+.single-table {
+    background: $single-table-bg;
+    -webkit-transition: all 0.20s linear;
+    transition: all 0.20s linear;
+    z-index: 1;
+    & .plan-header {
+        background: white;
+        color: rgb(55, 220, 137);
+        text-transform: capitalize;
+        padding: 2px 0;
+        & h3 {
+            margin: 0;
+            padding: 20px 0 5px 0;
+            text-transform: uppercase;
+        }
+    }
+
+    & .plan-price {
+        display: inline-block;
+        color: rgb(35, 135, 40);
+        margin: 0 0 10px 0;
+        font-size: 25px;
+        font-weight: bold;
+        background: rgb(55, 220, 137);
+        border-radius: 50%;
+        padding: 33px 15px;
+        & span {
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+    & ul {
+        margin: 0;
+        padding: 20px 0;
+        list-style: none;
+        & li {
+            padding: 8px 0;
+            margin: 0 20px;
+            border-bottom: 1px solid $table-border-color;
+            font-size: 15px;
+        }
+    }
+    & .plan-submit {
+        display: inline-block;
+        text-decoration: none;
+        margin: 20px 0 30px 0;
+        padding: 10px 40px;
+        border: 1px solid rgb(55, 220, 137);
+        color: white;
+        background: rgb(55, 220, 137);
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+        &:hover {
+            background: rgb(55, 220, 137);
+            color: #FFF;
+            -webkit-transition: all .25s linear;
+            -moz-transition: all .25s linear;
+            -ms-transition: all .25s linear;
+            -o-transition: all .25s linear;
+            transition: all .25s linear;
+        }
+    }
+
+    /* Bubble Float Right */
+    .hvr-bubble-float-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+    .hvr-bubble-float-right:before {
+        position: absolute;
+        z-index: -1;
+        top: calc(50% - 10px);
+        right: 0;
+        content: '';
+        border-style: solid;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent transparent;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+    .hvr-bubble-float-right:hover,
+    .hvr-bubble-float-right:focus,
+    .hvr-bubble-float-right:active {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    .hvr-bubble-float-right:hover:before,
+    .hvr-bubble-float-right:focus:before,
+    .hvr-bubble-float-right:active:before {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    
+}
+
+.color-2 {
+    box-shadow: 0px 11px 30px 10px rgba(163, 161, 161, 0.75);
+    & .single-table .plan-header{
+        background: white;
+        color: rgb(235, 138, 86);
+        & .plan-price{
+            color: white;
+            background: rgb(235, 138, 86);
+        }
+
+        
+        }
+    & .single-table .plan-submit{
+        border: 1px solid rgb(235, 138, 86);
+        background: rgb(235, 138, 86);
+        color: white;
+        &:hover{
+            background: rgb(235, 138, 86);
+            color: #FFF;
+        }       
+    }
+
+
+    .hvr-bubble-float-right:hover:before,
+    .hvr-bubble-float-right:focus:before,
+    .hvr-bubble-float-right:active:before {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+}
+
+
+.color-3 {
+    & .single-table .plan-header{
+        background: #ffffff;
+        color: #43ace4;
+        & .plan-price{
+            color: rgb(41, 102, 160);
+            background: #43ace4;
+        }
+
+        
+        }
+    & .single-table .plan-submit{
+        border: 1px solid #43ace4;
+        color: white;
+        background: #43ace4;;
+        &:hover{
+            background: #43ace4;
+            color: #FFF;
+        }       
+    }
+
+  
+    .hvr-bubble-float-right:hover:before,
+    .hvr-bubble-float-right:focus:before,
+    .hvr-bubble-float-right:active:before {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+}
+
+
+
+.color-4 {
+    & .single-table .plan-header{
+        background: $plan-header-bg-4;
+        color: $table-header;
+
+        & .plan-price{
+            color:$plan-header-bg-4;
+            background: #fff;
+        }
+
+        
+        }
+    & .single-table .plan-submit{
+        border: 1px solid $plan-header-bg-4;
+        color: $plan-header-bg-4; 
+        &:hover{
+            background: $plan-header-bg-4;
+            color: #FFF;
+        }       
+    }
+
+ 
+    .hvr-bubble-float-right:hover:before,
+    .hvr-bubble-float-right:focus:before,
+    .hvr-bubble-float-right:active:before {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+}
+
+
+
+.section1 {
+    background-position: right center;
+    background-image: url("../../../assets/img/Composed-layer-3.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .titre {
+      color: rgb(60, 60, 60);
+      text-align: center;
+      font-size: xx-large;
+      font-weight: bold;
+  }
+
+  .titre-2{
+color: rgb(107, 107, 107);
+text-align: center;
+font-size: medium;
+  }

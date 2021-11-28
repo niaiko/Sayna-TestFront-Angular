@@ -1,0 +1,21 @@
+@import url('../src/assets/css/circular-std.min.css');
+body {
+    font-family: CircularStd;
+}
+
+.page-holder {
+    min-height: 80vh;
+  }
+  
+  .bg-cover {
+    background-size: cover !important;
+  }
+
+  
+.subtitle {
+  font-size: xx-large;
+}
+
+.hello {
+  color: #616466;
+}
