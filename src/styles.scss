@@ -1,6 +1,15 @@
 @import url('../src/assets/css/circular-std.min.css');
-body {
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
     font-family: CircularStd;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
 }
 
 .page-holder {
